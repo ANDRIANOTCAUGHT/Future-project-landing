@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aether AI — Autonomous Workspace for Modern Engineering Teams</title>
+  <meta name="description" content="Aether AI is an intelligent, high-performance workspace engine designed to accelerate software engineering, real-time synthesis, and cloud infrastructure operations.">
+  <meta name="keywords" content="AI workspace, software engineering, cloud automation, developer productivity, next-gen SaaS">
+  <meta name="author" content="Aether Technologies">
+  <meta property="og:title" content="Aether AI — Intelligent Workspace for Modern Engineering">
+  <meta property="og:description" content="Experience autonomous neural workflows, quantum encryption, and seamless cloud mesh acceleration.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366f1'><path d='M12 2L2 7l10 5 10-5-10-5zm0 9l-8.5-4.25L12 11l8.5-4.25L12 11zm0 4.5l-8.5-4.25L12 15.5l8.5-4.25L12 15.5zm0 4.5l-8.5-4.25L12 20l8.5-4.25L12 20z'/></svg>">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Atmospheric Light Orbs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#hero" class="brand-logo" aria-label="Aether AI Homepage">
+        <div class="logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span>Aether<span class="text-gradient-brand">.AI</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-actions-mobile">
+            <a href="#contact" class="btn btn-primary" id="mobileCtaBtn">Get Started</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Header Actions -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-secondary">Sign In</a>
+        <a href="#contact" class="btn btn-primary">Start Free Trial</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Backdrop Overlay -->
+  <div class="mobile-nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Copy -->
+          <div class="hero-content reveal">
+            <div class="badge">
+              <span class="badge-pulse"></span>
+              <span>Next-Gen Release • Aether 2.0 Engine</span>
+            </div>
+            <h1 class="hero-title">
+              Power Your Workflows With <span class="text-gradient">Intelligent Autonomy</span>
+            </h1>
+            <p class="hero-description">
+              Aether brings instantaneous multi-model computation, real-time code synthesis, and automated infrastructure orchestration together in one unified, distraction-free environment.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary" id="heroGetStartedBtn">
+                <span>Start 14-Day Trial</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#features" class="btn btn-secondary" id="heroExploreBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Explore Architecture</span>
+              </a>
+            </div>
+
+            <!-- Social Proof Metrics -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="99.98">99.98%</span>
+                <span class="stat-label">System Uptime</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="10">10x</span>
+                <span class="stat-label">Faster Deployment</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="45000">45k+</span>
+                <span class="stat-label">Active Engineers</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Glass Dashboard Interface Mockup -->
+          <div class="hero-visual reveal">
+            <!-- Floating Live Status Badge 1 -->
+            <div class="floating-badge badge-pos-1">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Pipeline Status</div>
+                <strong style="font-size: 0.88rem; color: #34d399;">All Systems Synced</strong>
+              </div>
+            </div>
+
+            <!-- Dashboard Card Container -->
+            <div class="hero-mockup-card" id="heroInteractiveCard">
+              <div class="mockup-header">
+                <div class="window-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-status-tag">⚡ Ultra-Low Latency (4ms)</div>
+              </div>
+
+              <div class="mockup-metrics-grid">
+                <div class="metric-pill">
+                  <div class="metric-pill-title">Inference Throughput</div>
+                  <div class="metric-pill-value">1,482 <span style="font-size:0.85rem; color:#818cf8; font-weight:500;">req/s</span></div>
+                </div>
+                <div class="metric-pill">
+                  <div class="metric-pill-title">Cluster Health</div>
+                  <div class="metric-pill-value">99.9% <span style="font-size:0.85rem; color:#34d399; font-weight:500;">Active</span></div>
+                </div>
+              </div>
+
+              <!-- Animated Chart Simulation -->
+              <div class="mockup-chart-visual" title="Real-time Network Throughput">
+                <div class="chart-bar" style="height: 45%;"></div>
+                <div class="chart-bar" style="height: 60%;"></div>
+                <div class="chart-bar" style="height: 35%;"></div>
+                <div class="chart-bar" style="height: 75%;"></div>
+                <div class="chart-bar" style="height: 50%;"></div>
+                <div class="chart-bar" style="height: 90%;"></div>
+                <div class="chart-bar" style="height: 65%;"></div>
+                <div class="chart-bar" style="height: 100%;"></div>
+                <div class="chart-bar" style="height: 82%;"></div>
+                <div class="chart-bar" style="height: 95%;"></div>
+              </div>
+            </div>
+
+            <!-- Floating Live Status Badge 2 -->
+            <div class="floating-badge badge-pos-2">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Edge Nodes</div>
+                <strong style="font-size: 0.88rem; color: #ffffff;">24 Regions Active</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>Who We Are</span>
+          </div>
+          <h2 class="section-title">Built for Pioneers Building Tomorrow</h2>
+          <p class="section-subtitle">
+            We bridge the gap between human engineering ingenuity and scalable computational acceleration.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Architectural Pillars -->
+          <div class="about-preview-wrapper reveal">
+            <div class="about-card-canvas">
+              <div class="about-core-pillars">
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                  </div>
+                  <div class="pillar-info">
+                    <h4>Zero Friction Automation</h4>
+                    <p>Trigger complex multi-stage deployments with single-sentence prompts or git webhooks.</p>
+                  </div>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                  </div>
+                  <div class="pillar-info">
+                    <h4>SOC-2 Type II Certified</h4>
+                    <p>Isolated tenant sandbox environments with state-of-the-art encrypted key escrow.</p>
+                  </div>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <div class="pillar-info">
+                    <h4>Collaborative Multi-Tenancy</h4>
+                    <p>Real-time multiplayer coding and infrastructure diagnostics built right into your IDE.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Narrative & Highlights -->
+          <div class="about-text reveal">
+            <h3>Engineered from the ground up for relentless execution speed</h3>
+            <p>
+              Traditional devops pipelines are brittle, fragmented, and full of friction. Aether combines autonomous intelligence with high-bandwidth distributed edge nodes to automate redundant infrastructure chores.
+            </p>
+            <p>
+              Whether you are an ambitious startup scaling to your first million users or an enterprise engineering team orchestrating hybrid cloud clusters, Aether empowers you to build at the speed of thought.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <span class="highlight-num">99.99%</span>
+                <span class="highlight-desc">Guaranteed Service Availability</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-num">180+</span>
+                <span class="highlight-desc">Global Edge Data Locations</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-num">4.2M</span>
+                <span class="highlight-desc">Automated Builds Executed</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-num">24 / 7</span>
+                <span class="highlight-desc">Dedicated Mission Control Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION (3 CARDS) ==================== -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <span>Core Capabilities</span>
+          </div>
+          <h2 class="section-title">Designed for Extreme Performance</h2>
+          <p class="section-subtitle">
+            Explore the three cornerstones of the Aether platform engineered to redefine software infrastructure.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature Card 1 -->
+          <div class="feature-card reveal" data-tilt>
+            <div class="feature-icon-box icon-indigo">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12A10 10 0 0 1 12 2z"></path>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <span class="feature-tag">Intelligence Engine</span>
+            <h3 class="feature-title">Autonomous Neural Engine</h3>
+            <p class="feature-description">
+              Adaptive contextual synthesis analyzes your repository architecture and generates high-efficiency code modifications, unit tests, and refactors in milliseconds.
+            </p>
+            <ul class="feature-checklist">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero-latency code reasoning</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Multi-language AST comprehension</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Context-aware code completion</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div class="feature-card reveal" data-tilt>
+            <div class="feature-icon-box icon-cyan">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span class="feature-tag">Cloud Infrastructure</span>
+            <h3 class="feature-title">Hyper-Scalable Cloud Mesh</h3>
+            <p class="feature-description">
+              Execute microservices across global decentralized edge nodes with automatic cold-start elimination, load balancing, and real-time state synchronization.
+            </p>
+            <ul class="feature-checklist">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Sub-5ms global latency</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automatic horizontal autoscaling</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Multi-region database replica failover</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Feature Card 3 -->
+          <div class="feature-card reveal" data-tilt>
+            <div class="feature-icon-box icon-purple">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <span class="feature-tag">Security & Guardrails</span>
+            <h3 class="feature-title">Zero-Trust Quantum Shield</h3>
+            <p class="feature-description">
+              Military-grade cryptographic enclave protection ensures your proprietary models and repository intellectual property never leak to public training sets.
+            </p>
+            <ul class="feature-checklist">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Hardware-level memory enclaves</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Strict zero-data-retention guarantee</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Granular RBAC & SAML / SSO sync</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper reveal">
+          <div class="contact-grid">
+            <!-- Left Info Column -->
+            <div class="contact-info-col">
+              <div class="badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Get in Touch</span>
+              </div>
+              <h2 class="contact-title">Let’s build something extraordinary together</h2>
+              <p>
+                Have questions about custom model deployments, enterprise SLAs, or dedicated cloud clusters? Our engineering leadership team is here to assist.
+              </p>
+
+              <div class="contact-methods">
+                <div class="contact-method-card">
+                  <div class="contact-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-method-title">Direct Email</div>
+                    <div class="contact-method-val">engineering@aether-ai.io</div>
+                  </div>
+                </div>
+
+                <div class="contact-method-card">
+                  <div class="contact-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-method-title">Headquarters</div>
+                    <div class="contact-method-val">San Francisco, CA & London, UK</div>
+                  </div>
+                </div>
+
+                <div class="contact-method-card">
+                  <div class="contact-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-method-title">Support Hours</div>
+                    <div class="contact-method-val">24/7 Global Response Fleet</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form Column -->
+            <div class="contact-form-col">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="fullName" class="form-label">Full Name *</label>
+                    <input type="text" id="fullName" class="form-input" placeholder="e.g. Alex Morgan" required autocomplete="name">
+                    <span class="field-error" id="nameError">Please enter your name</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="workEmail" class="form-label">Work Email *</label>
+                    <input type="email" id="workEmail" class="form-input" placeholder="alex@company.com" required autocomplete="email">
+                    <span class="field-error" id="emailError">Please enter a valid email address</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiryType" class="form-label">Area of Interest</label>
+                  <select id="inquiryType" class="form-input" style="background-color: #0e1326; cursor: pointer;">
+                    <option value="enterprise">Enterprise Cloud Mesh Deployment</option>
+                    <option value="neural">Autonomous Neural Engine Integration</option>
+                    <option value="partnership">Technology Partnership</option>
+                    <option value="other">General Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="userMessage" class="form-label">Project Details *</label>
+                  <textarea id="userMessage" class="form-textarea" placeholder="Describe your team size, expected throughput, or deployment goals..." required></textarea>
+                  <span class="field-error" id="messageError">Please share some details about your inquiry</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submitFormBtn" style="width: 100%;">
+                  <span>Dispatch Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Toast Notification Component -->
+  <div class="toast" id="toastNotification" role="alert" aria-live="polite">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <div>
+      <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff;">Message Dispatched!</h4>
+      <p style="font-size: 0.85rem; color: #a7f3d0;" id="toastMessage">An engineering lead will contact you within 2 hours.</p>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER SECTION ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="Aether AI">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span>Aether<span class="text-gradient-brand">.AI</span></span>
+          </a>
+          <p>
+            The next-generation distributed intelligence engine empowering engineering teams to build, deploy, and scale fearless cloud applications.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h5>Product</h5>
+            <ul>
+              <li><a href="#features">Neural Engine</a></li>
+              <li><a href="#features">Cloud Mesh</a></li>
+              <li><a href="#features">Security Shield</a></li>
+              <li><a href="#hero">Release Notes 2.0</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#about">About Our Mission</a></li>
+              <li><a href="#contact">Careers (We're Hiring)</a></li>
+              <li><a href="#contact">Leadership</a></li>
+              <li><a href="#contact">Contact Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="#hero">Documentation</a></li>
+              <li><a href="#features">Architecture Whitepaper</a></li>
+              <li><a href="#hero">Status & Telemetry</a></li>
+              <li><a href="#contact">Security & Compliance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Aether Technologies Inc. All rights reserved. Crafted for excellence.
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com" class="social-icon-btn" aria-label="GitHub Profile" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://twitter.com" class="social-icon-btn" aria-label="Twitter Profile" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" class="social-icon-btn" aria-label="LinkedIn Profile" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
